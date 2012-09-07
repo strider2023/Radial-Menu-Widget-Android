@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.touchmenotapps.radialdemo.widgets.AppTextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	    android:textSize="24dp"
+	    android:textColor="@android:color/white"
+	    android:paddingRight="5dp"
+	    android:text="@string/about"/>   
+	    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_margin="5dp"/>
+    
+    <com.touchmenotapps.radialdemo.widgets.AppTextView  
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18dp"
+	    android:textColor="@android:color/white"
+	    android:padding="5dp"
+	    android:text="@string/about_body"/> 
+
+</LinearLayout>
