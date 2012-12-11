@@ -10,4 +10,12 @@
 	<string name="about_body">Radial Menu Demo Version 1 by Arindam Nath.</string>
 	<string name="contact_body">Contact Details Here!</string>
 	<string name="main_body">Long press any part of the screen to bring up radial menu.</string>
+	<string name="open_menu">Open Menu</string>
+	<string name="normal">Normal</string>
+	<string name="expandable">Expandable</string>
+	<string name="close">Close</string>
+	<string-array name="main_menu">
+	    <item>Radial Menu V1</item>
+	    <item>Radial Menu V2</item>
+	</string-array>
 </resources>
