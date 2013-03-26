@@ -17,5 +17,6 @@
 	<string-array name="main_menu">
 	    <item>Radial Menu V1</item>
 	    <item>Radial Menu V2</item>
+	    <item>Radial Progress</item>
 	</string-array>
 </resources>

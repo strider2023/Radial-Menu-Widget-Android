@@ -54,6 +54,9 @@ public class MainMenu extends ListActivity {
 					startActivity(new Intent(MainMenu.this,
 							RadialMenuActivity.class));
 					break;
+				case 2:
+					startActivity(new Intent(MainMenu.this, RadialProgressActivity.class));
+					break;
 				default:
 					break;
 				}

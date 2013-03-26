@@ -150,7 +150,7 @@ public class AltRadialMenuActivity extends FragmentActivity {
 		pieMenu.setOutlineColor(Color.BLACK, 225);
 		pieMenu.setInnerRingColor(0xAA66CC, 180);
 		pieMenu.setOuterRingColor(0x0099CC, 180);
-		// pieMenu.setHeader("Test Menu", 20);
+		//pieMenu.setHeader("Test Menu", 20);
 		pieMenu.setCenterCircle(menuCloseItem);
 
 		pieMenu.addMenuEntry(new ArrayList<RadialMenuItem>() {
@@ -169,9 +169,9 @@ public class AltRadialMenuActivity extends FragmentActivity {
 				pieMenu.show(v);
 			}
 		});
+		
 	}
-
-	@Override
+		@Override
 	protected void onResume() {
 		super.onResume();
 		// Init with home fragment
@@ -181,5 +181,11 @@ public class AltRadialMenuActivity extends FragmentActivity {
 				.beginTransaction()
 				.replace(mFragmentContainer.getId(),
 						new RadialMenuMainFragment()).commit();
+		
+		/*findViewById(R.id.alt_fragment_container).post(new Runnable() {
+			public void run() {
+				pieMenu.show(findViewById(R.id.alt_fragment_container));
+			}
+		});*/
 	}
 }
