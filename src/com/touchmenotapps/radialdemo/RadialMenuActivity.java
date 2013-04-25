@@ -6,14 +6,10 @@ import com.touchmenotapps.widget.radialmenu.menu.v2.RadialMenuItem;
 import com.touchmenotapps.widget.radialmenu.menu.v2.RadialMenuRenderer;
 import com.touchmenotapps.widget.radialmenu.menu.v2.RadialMenuRenderer.OnRadailMenuClick;
 
-import android.content.pm.ActivityInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.Window;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
 /**
  * 
@@ -31,24 +27,7 @@ public class RadialMenuActivity extends FragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//Check the OS and set the app bar likewise
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB && Build.VERSION.SDK_INT <= Build.VERSION_CODES.HONEYCOMB_MR2) {
-			setTheme(android.R.style.Theme_Holo_Light);
-			setContentView(R.layout.layout_holder);
-			getActionBar().setDisplayShowHomeEnabled(true);
-	    } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-			setTheme(android.R.style.Theme_Holo_Light_DarkActionBar);
-			setContentView(R.layout.layout_holder);
-			getWindow().setUiOptions(ActivityInfo.UIOPTION_SPLIT_ACTION_BAR_WHEN_NARROW);
-			getActionBar().setDisplayShowHomeEnabled(true);
-	    } else {
-	    	setTheme(R.style.RadialMenuLegacyTitleBar);
-	    	requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-	    	setContentView(R.layout.layout_holder);
-	    	getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.layout_appbar);
-	    	TextView barHeader = (TextView) findViewById(R.id.appbar_title_text);
-	    	barHeader.setText(R.string.app_name);
-	    }
+		setContentView(R.layout.layout_holder);
 		
 		//Init the frame layout
 		mHolderLayout = (FrameLayout) findViewById(R.id.fragment_container);

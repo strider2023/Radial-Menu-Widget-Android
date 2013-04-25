@@ -19,9 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AltRadialMenuActivity"/>
-        <activity android:name=".RadialMenuActivity"/>
-        <activity android:name=".RadialProgressActivity"/>
+        <activity android:name=".AltRadialMenuActivity" android:label="Radial Menu V1"/>
+        <activity android:name=".RadialMenuActivity" android:label="Radial Menu V2"/>
+        <activity android:name=".RadialProgressActivity" android:label="Radial Progress"/>
+        <activity android:name=".SemiCircularRadialMenuActivity" android:label="Semi Circular Radial Menu"/>
     </application>
 
 </manifest>

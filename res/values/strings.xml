@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, TestActivity!</string>
     <string name="app_name">Radial Menu Demo</string>
 	<string name="radial_demo">Radial Menu</string>
 	<string name="about">About</string>
@@ -18,5 +17,6 @@
 	    <item>Radial Menu V1</item>
 	    <item>Radial Menu V2</item>
 	    <item>Radial Progress</item>
+	    <item>Semi Circular Radial Menu</item>
 	</string-array>
 </resources>
